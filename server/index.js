@@ -1,12 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const Query = require('./db');
+const path = require('path');
 
 const app = express()
 app.use(express.json())
 app.use(cors({
     origin: 'https://rafaelgenish111.github.io/test_project/'
 }))
+
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/', (req, res) => {
     res.send('welcome!!!')
