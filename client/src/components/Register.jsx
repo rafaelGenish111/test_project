@@ -8,7 +8,7 @@ export default function Register() {
     const [username, setUsername] = useState(null)
     const [password, setPassword] = useState(null)
 
-    const url = 'https://test-project-z7xy.onrender.com/'
+    const url = 'https://test-project-z7xy.onrender.com'
 
     const navigate = useNavigate()
 
