@@ -6,7 +6,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <Router>
+    <Router basename="basename">
       <Routes>
         <Route path='/register' exect element={<Register />} />
         <Route path='/login' exect element={<Login />} />
