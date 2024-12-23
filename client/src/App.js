@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/register' exect Component={Register} />
-        <Route path='/login' exect Component={Login} />
-        <Route path='/home' exect Component={Home} />
+        <Route path='/register' exect element={<Register />} />
+        <Route path='/login' exect element={<Login />} />
+        <Route path='/home' exect element={<Home />} />
       </Routes>
    </Router>
   );
