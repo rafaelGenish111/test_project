@@ -5,7 +5,7 @@ export default function Login() {
     const [username, setUsername] = useState(null)
     const [password, setpassword] = useState(null)
 
-    const url = 'http://localhost:1000'
+    const url = 'https://rafaelgenish111.github.io/'
 
     const navigate = useNavigate()
 
