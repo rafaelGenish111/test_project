@@ -4,7 +4,9 @@ const Query = require('./db');
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://rafaelgenish111.github.io/test_project/'
+}))
 
 app.get('/', (req, res) => {
     res.send('welcome!!!')
